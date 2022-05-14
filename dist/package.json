@@ -2,9 +2,10 @@
     "name": "itchatserver",
     "version": "1.0.0",
     "description": "Server for itChat Front ",
-    "main": "app.ts",
+    "main": "dist/app.js",
     "scripts": {
-        "start": "node dist/app.js",
+        "start": "NODE_ENV=production node server",
+        "dev": "nodemon dist/app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

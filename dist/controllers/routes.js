@@ -23,7 +23,7 @@ const mongoOpt = config_1.default.get('mongoOpt');
 const key = config_1.default.get('PRIVATEKEY');
 const home = (req, res) => {
     try {
-        res.json({ msg: 'conexión Ok' });
+        res.status(200).json({ msg: 'conexión Ok' });
     }
     catch (error) {
         console.log(error);
