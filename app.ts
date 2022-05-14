@@ -5,10 +5,10 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import config from 'config';
 
-import socket from './controllers/socketsimple'
-import logger from './utils/logger'
+import socket from './server/controllers/socketsimple'
+import logger from './server/utils/logger'
 import { version } from './package.json';
-import router from "./routes/route";
+import router from "./server/routes/route";
 
 const port = config.get<number>('PORT');
 const host = config.get<string>('HOST');
