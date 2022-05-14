@@ -12,7 +12,7 @@ const key = config.get<string>('PRIVATEKEY')
 
 export const home: any = (req: Request, res: Response) => {
     try { 
-        res.json({msg:'conexión Ok'});
+        res.status(200).json({msg:'conexión Ok'});
     }
     catch (error) {
         console.log(error)
