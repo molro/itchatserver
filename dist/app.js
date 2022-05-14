@@ -10,7 +10,6 @@ const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
 const config_1 = __importDefault(require("config"));
 const socketsimple_1 = __importDefault(require("./controllers/socketsimple"));
-const logger_1 = __importDefault(require("./utils/logger"));
 const package_json_1 = require("./package.json");
 const route_1 = __importDefault(require("./routes/route"));
 const port = config_1.default.get('PORT');
@@ -29,8 +28,8 @@ app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.use(body_parser_1.default.json());
 app.use(route_1.default);
 httpServer.listen(port, host, () => {
-    logger_1.default.info(`🚀 Chat Server version: ${package_json_1.version} is listening 🚀 `);
-    logger_1.default.info(`http://${host}:${port}`);
+    console.log(`🚀 Chat Server version: ${package_json_1.version} is listening 🚀 `);
+    console.log(`http://${host}:${port}`);
     (0, socketsimple_1.default)({ io });
 });
 //# sourceMappingURL=app.js.map

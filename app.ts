@@ -6,7 +6,6 @@ import cors from 'cors';
 import config from 'config';
 
 import socket from './controllers/socketsimple'
-import logger from './utils/logger'
 import { version } from './package.json';
 import router from "./routes/route";
 
@@ -31,7 +30,7 @@ app.use(bodyParser.json());
 app.use(router);
 
 httpServer.listen(port, host, () => {
-    logger.info(`🚀 Chat Server version: ${version} is listening 🚀 `);
-    logger.info(`http://${host}:${port}`);
+    console.log(`🚀 Chat Server version: ${version} is listening 🚀 `);
+    console.log(`http://${host}:${port}`);
     socket({io});
 })
