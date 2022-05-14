@@ -5,10 +5,10 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import config from 'config';
 
-import socket from './server/controllers/socketsimple'
-import logger from './server/utils/logger'
+import socket from './controllers/socketsimple'
+import logger from './utils/logger'
 import { version } from './package.json';
-import router from "./server/routes/route";
+import router from "./routes/route";
 
 const port = config.get<number>('PORT');
 const host = config.get<string>('HOST');
@@ -35,5 +35,3 @@ httpServer.listen(port, host, () => {
     logger.info(`http://${host}:${port}`);
     socket({io});
 })
-
-export default app
