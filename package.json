@@ -1,21 +1,25 @@
 {
-  "name": "server",
+  "name": "itchatserver",
   "version": "1.0.0",
-  "description": "server to iTchat",
-  "main": "app.js",
-  "engines": {
-    "node": "16.x",
-    "npm": "8.x"
-  },
+  "description": "Server for itChat Front ",
+  "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .ts",
-    "dev": "nodemon dist/app.js",
-    "start": "NODE_ENV=production node server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molro/itchatserver.git"
+  },
+  "keywords": [
+    "API",
+    "REST"
+  ],
+  "author": "@molro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/molro/itchatserver/issues"
+  },
+  "homepage": "https://github.com/molro/itchatserver#readme",
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.12",
