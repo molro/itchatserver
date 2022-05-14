@@ -4,7 +4,7 @@
   "description": "Server for itChat Front ",
   "main": "app.ts",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "NODE_ENV=production node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
