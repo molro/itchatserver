@@ -1,0 +1,52 @@
+{
+    "name": "itchatserver",
+    "version": "1.0.0",
+    "description": "Server for itChat Front ",
+    "main": "app.ts",
+    "scripts": {
+        "start": "node dist/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/molro/itchatserver.git"
+    },
+    "keywords": [
+        "API",
+        "REST"
+    ],
+    "author": "@molro",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/molro/itchatserver/issues"
+    },
+    "homepage": "https://github.com/molro/itchatserver#readme",
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.2",
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@typescript-eslint/eslint-plugin": "^5.14.0",
+        "@typescript-eslint/parser": "^5.14.0",
+        "eslint": "^8.10.0",
+        "nodemon": "^2.0.15",
+        "typescript": "^4.6.2"
+    },
+    "dependencies": {
+        "-": "^0.0.1",
+        "@types/config": "^0.0.41",
+        "@types/jsonwebtoken": "^8.5.8",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.2",
+        "config": "^3.3.7",
+        "cors": "^2.8.5",
+        "dayjs": "^1.10.8",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.3",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.2.9",
+        "pino": "^7.8.1",
+        "pino-pretty": "^7.5.3",
+        "socket.io": "^4.4.1",
+        "ts-node": "^10.7.0"
+    }
+}
