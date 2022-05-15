@@ -10,7 +10,7 @@ import { version } from './package.json';
 import router from "./routes/route";
 
 const port = config.get<number>('PORT');
-const host = config.get<string>('HOST');
+// const host = config.get<string>('HOST'); ENV
 const corsOrigin = config.get<string>('CORSORIGIN');
 
 const app = express();
@@ -29,8 +29,9 @@ app.use(bodyParser.json());
 
 app.use(router);
 
-httpServer.listen(port, host, () => {
+httpServer.listen(
+    port, /*host,*/ () => {
     console.log(`🚀 Chat Server version: ${version} is listening 🚀 `);
-    console.log(`http://${host}:${port}`);
+    // console.log(`http://${host}:${port}`);
     socket({io});
 })
