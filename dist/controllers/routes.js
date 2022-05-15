@@ -20,7 +20,7 @@ const users_1 = __importDefault(require("../models/users"));
 const config_1 = __importDefault(require("config"));
 const mongoURI = config_1.default.get('MONGO_URI');
 const mongoOpt = config_1.default.get('mongoOpt');
-const key = config_1.default.get('PRIVATEKEY');
+const key = config_1.default.get('secret');
 const home = (req, res) => {
     try {
         res.status(200).json({ msg: 'conexión Ok' });

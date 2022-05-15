@@ -11,6 +11,7 @@ exports.default = {
     HOST: process.env.HOST,
     PASSWORD: process.env.PASSWORD,
     MONGO_URI: process.env.MONGO_URI,
+    secret: process.env.PRIVATEKEY,
     mongoOpt: {
         autoIndex: true,
         maxPoolSize: 10,
@@ -18,6 +19,13 @@ exports.default = {
         socketTimeoutMS: 45000,
         family: 4 // Use IPv4, skip trying IPv6'
     },
-    PRIVATEKEY: process.env.PRIVATEKEY,
+    config: {
+        authRequired: false,
+        auth0Logout: true,
+        secret: process.env.PRIVATEKEY,
+        // baseUrl: process.env.BASE_URL!,
+        clientID: process.env.CLIENT_ID,
+        issuerBaseURL: process.env.ISSUERBASE_URL,
+    }
 };
 //# sourceMappingURL=default.js.map

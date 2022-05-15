@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const config_1 = __importDefault(require("config"));
-const key = config_1.default.get('PRIVATEKEY');
+const key = config_1.default.get('secret');
 function tokenValidation(req, res, next) {
     const token = req.header('auth-token');
     if (!token)

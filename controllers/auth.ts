@@ -6,7 +6,7 @@ import config from 'config';
 import UserModel from '../models/users';
 
 const mongoURI = config.get<string>('MONGO_URI'); 
-const key = config.get<string>('PRIVATEKEY')
+const key = config.get<string>('secret')
 const mongoOpt = config.get<object>('mongoOpt');
 
 export const loginPost = async (req: Request, res: Response) => {

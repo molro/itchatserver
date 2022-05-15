@@ -4,6 +4,7 @@ declare const _default: {
     HOST: string;
     PASSWORD: string;
     MONGO_URI: string;
+    secret: string;
     mongoOpt: {
         autoIndex: boolean;
         maxPoolSize: number;
@@ -11,6 +12,12 @@ declare const _default: {
         socketTimeoutMS: number;
         family: number;
     };
-    PRIVATEKEY: string;
+    config: {
+        authRequired: boolean;
+        auth0Logout: boolean;
+        secret: string;
+        clientID: string;
+        issuerBaseURL: string;
+    };
 };
 export default _default;

@@ -8,7 +8,7 @@ import config from 'config';
 
 const mongoURI = config.get<string>('MONGO_URI'); 
 const mongoOpt = config.get<object>('mongoOpt');
-const key = config.get<string>('PRIVATEKEY')
+const key = config.get<string>('secret')
 
 export const home: any = (req: Request, res: Response) => {
     try { 

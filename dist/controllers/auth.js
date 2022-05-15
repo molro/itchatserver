@@ -19,7 +19,7 @@ const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const config_1 = __importDefault(require("config"));
 const users_1 = __importDefault(require("../models/users"));
 const mongoURI = config_1.default.get('MONGO_URI');
-const key = config_1.default.get('PRIVATEKEY');
+const key = config_1.default.get('secret');
 const mongoOpt = config_1.default.get('mongoOpt');
 const loginPost = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { email, password } = req.body;

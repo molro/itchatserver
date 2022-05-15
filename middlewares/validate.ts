@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import {Request, Response, NextFunction} from 'express';
 import config from 'config'
-const key = config.get<string>('PRIVATEKEY')
+const key = config.get<string>('secret')
 
 export default function tokenValidation (req: Request, res: Response, next: NextFunction) {
     const token = req.header('auth-token');
