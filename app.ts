@@ -9,7 +9,7 @@ import socket from './controllers/socketsimple'
 import { version } from './package.json';
 import router from "./routes/route";
 
-const port = config.get<number>('PORT');
+const port = config.get<number>('PORT') || 4000;
 // const host = config.get<string>('HOST'); ENV
 const corsOrigin = config.get<string>('CORSORIGIN');
 

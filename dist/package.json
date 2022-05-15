@@ -3,6 +3,10 @@
     "version": "1.0.0",
     "description": "Server for itChat Front ",
     "main": "dist/app.js",
+    "engines": {
+        "node": "16.x",
+        "npm": "8.x"
+    },
     "scripts": {
         "start": "node dist/app.js",
         "dev": "nodemon dist/app.js",

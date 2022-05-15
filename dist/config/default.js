@@ -7,7 +7,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 exports.default = {
     CORSORIGIN: process.env.CORSORIGIN,
-    PORT: process.env.PORT,
+    PORT: process.env.PORT || 4000,
     HOST: process.env.HOST,
     PASSWORD: process.env.PASSWORD,
     MONGO_URI: process.env.MONGO_URI,

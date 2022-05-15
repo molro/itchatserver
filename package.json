@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Server for itChat Front ",
   "main": "dist/app.js",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "scripts": {
-    "start": "NODE_ENV=development&& node dist/app.js",
-    "start-prod":"NODE_ENV=production&& node dist/app.js",
+    "start": "node dist/app.js",
     "dev": "nodemon dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

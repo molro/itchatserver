@@ -1,6 +1,6 @@
 declare const _default: {
     CORSORIGIN: string;
-    PORT: string;
+    PORT: string | number;
     HOST: string;
     PASSWORD: string;
     MONGO_URI: string;
